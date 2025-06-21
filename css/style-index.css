@@ -1,0 +1,84 @@
+.titulo2{
+    color: var(--color-titulos-secundario);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.titulo1{
+    color: var(--color-titulos-secundario);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -.2em;
+}
+
+.parrafo{ 
+    color: var(--color-parrafos-secundario);
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.caracteristicas{
+    color: var(--color-parrafos-secundario);
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: .5em;
+}
+
+.margen{
+    margin-bottom: 2em;
+}
+
+
+.enlace{  /*INLINE NO SE PUEDE APLICAR MARGIN A MENOS QUE SE CONVIERTA CON DISPLAY*/
+    background-color: var(--color-secundario);
+    color:white;
+    padding: 1em;
+    border-radius: .6em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.enlace:hover{
+    color: #fcfcfc;
+    background-color: var(--color-cuaternario);
+    transform: translateY(-3px); 
+    border: 2px solid black;
+    transition: background-color .5s ease-in-out;
+}
+
+
+
+/*INICIO DE CARDS*/
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5em;   
+}
+
+.card{
+    background-color: white;
+    border-radius: .5em;
+    border: 1px solid var(--color-parrafos);
+    box-shadow: 2px 2px 10px var(--color-sombras);
+}
+
+.card-img img{
+  border-radius: .5em .5em 0 0;
+
+}
+
+.card-content{
+    padding: .2em;
+}
+
+.card-title{
+    color: var(--color-titulos);
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
