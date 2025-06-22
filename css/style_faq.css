@@ -7,7 +7,7 @@
     --color-parrafos-primario: #53575A;
     --color-parrafos-secundario: #ffffff;
     --color-titulos: #282D31; 
-    --color-fondo-primario: #c62828;
+    --color-fondo-primario: #ff0000;
     --color-fondo-secundario: #000000;
     --color-sombras: #282D31;
 }
@@ -140,22 +140,34 @@ footer {
 }
 /* FIN DE MENÚ */
 
-/* Estilo personalizado para el botón */
+/* INICIO: BOTON */
 .custom-btn {
-    display: inline-block;
-    background-color: var(--color-primario);
-    color: var(--color-parrafos-secundario);
-    text-decoration: none;
-    border-radius: .5em;
-    border: 2px solid black;
-    transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  background-color: #00BFFF; /* Color celeste */
+  color: white;
+  text-decoration: none;
+  border-radius: .5em;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.custom-btn i {
+  margin-left: 8px; /* Espacio entre texto y flecha */
+  transition: transform 0.3s ease;
 }
 
 .custom-btn:hover {
-    background-color: var(--color-cuaternario);
-    transform: translateY(-3px);
-    border: 2px solid black;
+  background-color: #009acd;
+  transform: scale(1.05); /* Efecto agrandar al pasar el cursos por el botón */
 }
+
+.custom-btn:hover i {
+  transform: translateX(4px); /* Mueve la flecha un poco a la derecha */
+}
+/* FIN: BOTON */
 
 /* Contenedor principal */
 .faq-container {
