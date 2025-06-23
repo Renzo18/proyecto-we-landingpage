@@ -383,6 +383,17 @@ input[type="radio"] {
   right: 10px;
 }
 
+/* Style del título de beneficio H2*/
+.titulo-beneficio {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+  font-weight: 800; /* Muy en negrita */
+  color: #000000;  /* Negro fuerte como en la imagen */
+  line-height: 1.3;
+  text-align: center;
+}
+/* Fin del título de beneficio */
+
 /* FIN: CARRUSEL DE IMÁGENES */
 
 /* INICIO: RESPONSIVE PRESENTACIÓN Y CARDS */
