@@ -1,0 +1,215 @@
+/* 1. SELECTOR PADRE O PRINCIPAL */
+:root {
+    --color-primario: #ff0000; 
+    --color-secundario: #000000;
+    --color-terciario: #ffffff;
+    --color-cuaternario: #0059ff;
+    --color-parrafos-primario: #53575A;
+    --color-parrafos-secundario: #ffffff;
+    --color-titulos: #282D31; 
+    --color-fondo-primario: #ff0000;
+    --color-fondo-secundario: #000000;
+    --color-sombras: #282D31;
+}
+
+/* 2. SELECTOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. SELECTOR HIJO */
+body {
+    background-color: var(--color-fondo-primario);
+    padding-top: 6em;
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* INICIO DE MENU */
+header {
+    background-color: var(--color-fondo-secundario);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 3px var(--color-sombras);
+}
+
+.menu {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.icono-menu {
+    display: none;
+}
+
+.img-logo {
+    height: 3.8em;
+    padding: .2em;
+}
+
+.enlaces {
+    text-align: right;
+}
+
+.enlaces a {
+    color: var(--color-parrafos-secundario);
+    padding: 1em;
+    font-size: 1em;
+    text-decoration: none;
+}
+/* FIN DE MENU */
+
+/* INICIO DE PIE DE PAGINA */
+footer {
+    background-color: var(--color-fondo-secundario);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 3px var(--color-sombras);
+}
+
+.pie-de-pagina {
+    color: var(--color-parrafos-secundario);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.inferior {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+/* FIN DE PIE DE PAGINA */
+
+/* ANIMACIÓN DE CABECERA */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* RESPONSIVE WEB DESIGN (ADAPTABLE) */
+@media screen and (max-width: 1023px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .icono-menu {
+        display: block;
+        color: var(--color-terciario);
+        font-size: 2em;
+        margin-top: .4em;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: .5em;
+    }
+
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* FIN DE MENÚ */
+
+/* INICIO: BOTON */
+.custom-btn {
+  display: inline-block;
+  background-color: #00BFFF; /* Color celeste */
+  color: white;
+  text-decoration: none;
+  border-radius: .5em;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.custom-btn i {
+  margin-left: 8px; /* Espacio entre texto y flecha */
+  transition: transform 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #009acd;
+  transform: scale(1.05); /* Efecto agrandar al pasar el cursos por el botón */
+}
+
+.custom-btn:hover i {
+  transform: translateX(4px); /* Mueve la flecha un poco a la derecha */
+}
+/* FIN: BOTON */
+
+/* Contenedor principal */
+.faq-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Título central */
+.faq-container h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Cada bloque de pregunta */
+.faq-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+}
+
+/* Pregunta */
+.faq-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+/* Respuesta */
+.faq-item p,
+.faq-item ul {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Lista dentro de la respuesta */
+.faq-item ul {
+    padding-left: 20px;
+}
+
+.faq-item ul li {
+    margin-bottom: 6px;
+}
