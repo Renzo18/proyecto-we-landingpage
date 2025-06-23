@@ -87,6 +87,22 @@ header {
 }
 /* Fin WhatsApp */
 
+/* Style de active: Para que los elementos con clase active muestren una línea blanca debajo  */
+.enlaces a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  color: red !important;
+}
+
+.faq-page .faq-link.active {
+  color: red !important;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5em;
+}
+/* Fin style active */
+
 /* INICIO DE PIE DE PAGINA */
 footer {
     background-color: var(--color-fondo-secundario);
