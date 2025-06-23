@@ -1,59 +1,301 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <!-- Tilde de Documentos -->
-        <meta charset="UTF-8">
-        <!-- Responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Titulo del proyecto y/o sistema -->
-        <title>Noticias</title>
-        <!-- Fuente de Google Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Libreria de Iconos -->
-        <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-        <!-- Framework de bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- Nuestra Hoja de Estilos css -->
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/jquery.js"></script>
-    </head>
-    <body>
-        <!-- INICIO DE MENÚ DE NAVEGACIÓN -->
-        <header id="header">
-            <nav class="menu">
-                <div class="logo">
+
+<head>
+    <!-- Tilde de Documentos -->
+    <meta charset="UTF-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo del proyecto y/o sistema -->
+    <title>Noticias</title>
+    <!-- Fuente de Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Libreria de Iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!-- Framework de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Nuestra Hoja de Estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- INICIO DE MENÚ DE NAVEGACIÓN -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid img-logo" />
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="fa-solid fa-bars icono-menu"></i>
+                </a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">NOSOTROS</a>
+                <a href="beneficios.html">BENEFICIOS</a>
+                <a href="noticias.html">NOTICIAS</a>
+                <a href="boletin.html">BOLETÍN</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://store.steampowered.com/app/1451190/Undisputed/?l=spanish" target="_blank"
+                    class="custom-btn">ADQUIERELO YA!</a>
+            </div>
+        </nav>
+    </header>
+    <!-- FIN DE MENÚ DE NAVEGACIÓN -->
+    <!-- Fin de sistema de rejilla -->
+
+
+
+    <article class="container">
+
+        <h1 class="text-center mb-5 titulo1">Innovaciones, Creaciones de la Comunidad y Eventos Destacados</h1>
+
+        <div class="page" data-page="1">
+            <!-- Tarjeta 1 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Skins retro" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
                     <a href="#">
-                        <img src="img/logo.png" alt="Logo" class="img-fluid img-logo" />
+                        <h1 class="card-title">Nuevos Skins Retro de Boxeadores</h1>
                     </a>
-                    <a href="#" class="btn-menu" id="btn-menu">
-                        <i class="fa-solid fa-bars icono-menu"></i>
+                    <a href="#" class="card-info">Revive los 80s con atuendos legendarios</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 2 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/spotlight-junio.jpg" alt="Spotlight junio" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Jugadores Destacados de Junio</h1>
                     </a>
-                </div>
-                <div class="enlaces" id="enlaces">
-                    <a href="index.html">NOSOTROS</a>
-                    <a href="beneficios.html">BENEFICIOS</a>
-                    <a href="noticias.html">NOTICIAS</a>
-                    <a href="boletin.html">BOLETÍN</a>
-                    <a href="faq.html">FAQ</a>
-                </div>
-            </nav>
-        </header>
-        <!-- FIN DE MENÚ DE NAVEGACIÓN -->
-        <!-- Fin de sistema de rejilla -->
+                    <a href="#" class="card-info">Conoce los mejores combates del mes</a>
+                </section>
+            </section>
 
-        <!-- Los scripts deben ir aquí, al final del archivo -->
-        <script src="js/headroom.min.js"></script>
-        <script src="js/menu-flex.js"></script>
+            <!-- Tarjeta 3 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/joe-frazier.jpg" alt="Joe Frazier" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Nuevo Boxeador: Joe Frazier</h1>
+                    </a>
+                    <a href="#" class="card-info">Disponible ahora con estilo agresivo</a>
+                </section>
+            </section>
 
-        <footer id="footer">
-            <div class="container-fluid">
-                <div class="inferior">
-                    <div class="col-md-12 text-center">
-                        <p class="pie-de-pagina">© 2025 Undisputed. Todos los derechos reservados.</p>
-                    </div>
+            <!-- Tarjeta 4 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/joe-frazier.jpg" alt="Torneo oficial" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Torneo Global: Campeones del Ring</h1>
+                    </a>
+                    <a href="#" class="card-info">Inscripciones abiertas para competir</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 5 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="IA actualizada" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Mejoras en IA y Realismo Visual</h1>
+                    </a>
+                    <a href="#" class="card-info">Más precisión en movimientos e impacto</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 6 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Modo espectador" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Modo Espectador ya Disponible</h1>
+                    </a>
+                    <a href="#" class="card-info">Sigue combates en tiempo real</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 7 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Modo espectador" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Entrevista al Campeón Mundial</h1>
+                    </a>
+                    <a href="#" class="card-info">Conoce su estrategia y preparación</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 8 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Modo espectador" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Detrás de Cámaras: Motion Capture</h1>
+                    </a>
+                    <a href="#" class="card-info">Así se graban los golpes y esquivas</a>
+                </section>
+            </section>
+
+        </div>
+
+
+
+        <div class="page" data-page="2" style="display: none;">
+            <!-- Tarjeta 10 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Modo carrera" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Nueva Arena: Coliseo de Tokio</h1>
+                    </a>
+                    <a href="#" class="card-info">Ahora tus elecciones afectan tu progreso</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 11 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Boxeadoras" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Boxeadoras se Unen al Roster</h1>
+                    </a>
+                    <a href="#" class="card-info">Diversidad e inclusión en Undisputed</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 12 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Semana gratuita" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Semana de Prueba Gratuita</h1>
+                    </a>
+                    <a href="#" class="card-info">Juega sin costo en todas las plataformas</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 13 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Comentaristas legendarios" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Comentaristas Legendarios</h1>
+                    </a>
+                    <a href="#" class="card-info">Voces icónicas como Teddy Atlas ahora disponibles</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 14 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Balance de atributos" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Ajustes de Balance en el Juego</h1>
+                    </a>
+                    <a href="#" class="card-info">Estadísticas actualizadas para mayor equidad</a>
+                </section>
+            </section>
+
+            <!-- Tarjeta 15 -->
+            <section class="card">
+                <section class="card-img">
+                    <a href="#"><img src="img/skins-retro.jpg" alt="Modo leyenda" class="img-fluid"></a>
+                </section>
+                <section class="card-content">
+                    <a href="#">
+                        <h1 class="card-title">Regresa el Modo Leyenda</h1>
+                    </a>
+                    <a href="#" class="card-info">Revive combates clásicos de la historia</a>
+                </section>
+            </section>
+        </div>
+
+
+    </article>
+
+
+
+    <div class="pagination">
+        <button onclick="goToPage(1)">Anterior</button>
+        <button class="page-btn active" onclick="goToPage(1)">1</button>
+        <button class="page-btn" onclick="goToPage(2)">2</button>
+        <button onclick="goToPage(2)">Siguiente</button>
+    </div>
+
+
+    <br><br><br><br>
+
+
+    <!-- Los scripts deben ir aquí, al final del archivo -->
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+    <script>
+        function goToPage(page) {
+            // Ocultar todas las páginas
+            document.querySelectorAll('.page').forEach(p => {
+                p.style.display = 'none';
+            });
+
+            // Mostrar la página actual
+            const current = document.querySelector('.page[data-page="' + page + '"]');
+            if (current) current.style.display = 'grid';
+
+            // Cambiar clase activa en botones
+            document.querySelectorAll('.page-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            const activeBtn = document.querySelector('.page-btn:nth-child(' + (page + 1) + ')');
+            if (activeBtn) activeBtn.classList.add('active');
+        }
+    </script>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="inferior">
+                <div class="col-md-12 text-center">
+                    <p class="pie-de-pagina">© 2025 Undisputed. Todos los derechos reservados.</p>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
 </html>
