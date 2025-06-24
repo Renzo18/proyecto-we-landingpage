@@ -386,3 +386,20 @@ hr {
 .custom-btn:hover i {
   transform: translateX(4px); /* Mueve la flecha un poco a la derecha */
 }
+
+
+/* Style de active: Para que los elementos con clase active muestren una línea blanca debajo el cambie el color a rojo */
+.enlaces a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  color: red !important;
+}
+
+.faq-page .faq-link.active {
+  color: red !important;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5em;
+}
+/* Fin style active */
