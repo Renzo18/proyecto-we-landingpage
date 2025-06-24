@@ -244,6 +244,21 @@ footer {
     padding-left: 20px;
 }
 
-.faq-item ul li {
-    margin-bottom: 6px;
+.faq-item {
+  margin: 0;
+  padding: 0;
 }
+
+.faq-box {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem; /* reduce el espacio entre bloques */
+}
+
+/* Si tienes una línea separadora (como un <hr>) */
+hr {
+  margin: 0.5rem 0;        /* Reduce espacio arriba y abajo de la línea */
+}
+/* Style fin box */
